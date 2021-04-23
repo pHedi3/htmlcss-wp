@@ -30,36 +30,79 @@
 .big-box {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
 }
 
+/* lyout intestazione  */
 header {
     height: 100px;
-    background-color: black;
+    margin: 10px 0; 
 }
 
+header img {
+    height: 100%;
+}
+
+/* leyout nav */
 nav {
-    height: 100px;
-    background-color: #333;
+    padding: 15px 0;
 }
 
-footer {
-    height: 100px;
-    background-color: rgb(231, 231, 231);
+ul {
+    list-style-type: none;
 }
- 
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+}
+
+/* leyout big-img  */
+
 .big-img {
-    height: 400px;
-    background-color: rgb(77, 76, 76) ;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;;
     border-radius: 15px;
     margin: 15px 0;
+
 }
 
-/* sezione main */
+.po-img {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    padding-top: 350px;
+    padding-left: 30px;
+}
+
+.po-img .title{
+    color: white;
+    width: 50%;
+}
+.title h3 {
+    font-size: 30px;
+}
+
+/* sezione main-tilte */
 .title-main {
-    height: 100px;
-    background-color: rgb(119, 117, 117);
+    
+}
+.title-main h2 {
+    color: #333;
+    font-size: 40px;
+
 }
 
+.title h6 {
+    font-size: 14px;
+}
+
+/* sezione main-left-right-midel  */
 .left-main, .right-main {
     width: 25%;
 }
@@ -75,3 +118,18 @@ footer {
 .right-main {
     padding: 30px 0 30px 15px;
 }
+
+h6, .midel-main p, .left-main p, .right-main p {
+    color: grey;
+
+}
+/* leyout piedipagina */
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
+.dev::after{
+    content: "\2764";
+    color: red;
+}
+
